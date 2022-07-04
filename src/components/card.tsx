@@ -8,7 +8,7 @@ export default function Card({pokemon}: any): JSX.Element{
     const id:string = get_id.replace(".", "");
 
     return(
-        <div className={styles.card}>
+        <div className={`${styles.card} background_${pokemon.types[0].type.name}`}>
             <div className={styles.image_div}>
                 <Image src={`${pokemon.sprites.other["official-artwork"].front_default}`} width={150} height={150} alt="" />
             </div>
