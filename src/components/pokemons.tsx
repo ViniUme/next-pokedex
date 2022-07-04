@@ -2,7 +2,11 @@ import Requests from '../../utils/requests-pokemons';
 
 export default function Pokemons(): JSX.Element{
 
-    Requests();
+    async function RequestPokemons(){
+        const list = await Requests.GetManyPokemons();
+        console.log(list)
+    }
+    RequestPokemons();
 
     return(
         <div>
