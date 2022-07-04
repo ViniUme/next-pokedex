@@ -1,8 +1,4 @@
 /* eslint-disable import/no-anonymous-default-export */
-/*export default async () => {
-    
-}*/
-
 export default {
     GetManyPokemons: async () => {
 
