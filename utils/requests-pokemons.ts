@@ -4,7 +4,7 @@ export default {
 
         const list: any = []
 
-        for(var i = 1; i < 30; i++){
+        for(var i = 1; i < 150; i++){
             const respose: Response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
             const json = await respose.json();
             list.push(json);
