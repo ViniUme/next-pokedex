@@ -5,6 +5,7 @@
     margin: 20px;
     background: black;
     border-radius: 30px;
+    color: white;
 }
 
 .image_div{
@@ -29,7 +30,11 @@
     text-align: center;
 }
 
-.id, .name{
+.id, .name, .types{
     font-family: 'Poppins', sans-serif;
-    color: white;
+}
+
+.types{
+    margin-top: 20px;
+    font-size: 0.9rem;
 }
