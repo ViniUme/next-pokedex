@@ -1,6 +1,35 @@
 .card{
     width: 250px;
-    height: 300px;
+    height: 350px;
+    flex-direction: column;
     margin: 20px;
     background: black;
+    border-radius: 30px;
+}
+
+.image_div{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    background: white;
+}
+
+.image_div, .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.id{
+    margin-top: 10px;
+}
+
+.name{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.id, .name{
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
