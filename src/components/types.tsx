@@ -2,6 +2,8 @@ import styles from '../styles/types.module.scss';
 
 export default function Types({types}: any): JSX.Element{
 
+    console.log(types[0].type.name)
+
     if(types.length === 1){
 
         const type = types[0].type.name
