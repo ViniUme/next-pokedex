@@ -5,6 +5,11 @@
     margin: 20px;
     border-radius: 30px;
     color: white;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
 }
 
 .image_div{
