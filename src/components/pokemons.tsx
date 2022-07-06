@@ -7,13 +7,17 @@ import { useState, useEffect } from 'react';
 export default function Pokemons(): JSX.Element{
 
     const[list, setList] = useState([])
-    const[who, setWho] = useState(0)
+    const[who, setWho] = useState(29)
 
     useEffect(() => {
         async function RequestPokemons(){
 
             const newPokemons = await Requests.GetManyPokemons(who)
 
+            if(newPokemons === false){
+                const observer = document.querySelector("#observer");
+                observer.parentNode?.removeChild(observer);
+            }
             if(newPokemons != null){
                 setList((prevPokemons) => [...prevPokemons, ...newPokemons]);
             }
