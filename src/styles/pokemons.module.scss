@@ -2,14 +2,35 @@
     width: 100vw;
     height: max-content;
     margin-top: 150px;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
+    .observer{
+        width: 100vw;
+        height: 130px;
+
+        .loader{
+            width: 50px;
+            height: 50px;
+            border: #ffffff 5px solid;
+            border-top: transparent 5px solid;
+            border-radius: 100%;
+            animation: rotate 1s steps(50, end) infinite;
+        }
+
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    }
 }
 
-.observer{
-    width: 100vw;
-    height: 100px;
-    background: red;
+.pokemons_div, .observer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

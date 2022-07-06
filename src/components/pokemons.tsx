@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Requests from '../../utils/requests-pokemons';
 import Card from './card';
 import styles from '../styles/pokemons.module.scss';
@@ -24,7 +25,7 @@ export default function Pokemons(): JSX.Element{
     }, [who])
 
     useEffect(() => {
-        const observer = document.querySelector("#observer")
+        const observer: Element | null = document.querySelector("#observer")
     
         const intersectionObserver = new IntersectionObserver((entries) => {
             if(entries.some((entry) => entry.isIntersecting)){
@@ -46,7 +47,9 @@ export default function Pokemons(): JSX.Element{
                 )
             })}
 
-            <div id="observer" className={styles.observer}></div>
+            <div id="observer" className={styles.observer}>
+                <span className={styles.loader} />
+            </div>
 
         </div>
     )
