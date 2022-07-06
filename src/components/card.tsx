@@ -4,15 +4,12 @@ import Types from './types'
 
 export default function Card({pokemon}: any): JSX.Element{
 
-    const get_id: string = `${pokemon.id / 100}`
-    const id: string = get_id.replace(".", "");
-
     return(
         <div className={`${styles.card} background_${pokemon.types[0].type.name}`}>
             <div className={styles.image_div}>
                 <Image src={`${pokemon.sprites.other["official-artwork"].front_default}`} width={150} height={150} alt="" />
             </div>
-            <span className={styles.id}>Nº{id}</span>
+            <span className={styles.id}>Nº{pokemon.id}</span>
             <span className={styles.name}>{pokemon.species.name}</span>
             
             <div className={styles.types}>
