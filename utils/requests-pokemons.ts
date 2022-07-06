@@ -2,16 +2,21 @@
 export default {
     GetManyPokemons: async (number_who: number) => {
 
-        if(number_who >= 31){
+        if(number_who > 31){
             return false
         }
-        else if(number_who != 0){
+        if(number_who != 0){
             const list: any = []
             var max: number = number_who * 30;
             if( (number_who * 30) > 905 ){
-                max = 905
+                max = 906
+                var min = 900
             }
-            var min = max - 29;
+            else{
+                var min = max - 29;
+            }
+
+            console.log(min, max)
 
             while(min < max){
                 const respose: Response = await fetch(`https://pokeapi.co/api/v2/pokemon/${min}`);

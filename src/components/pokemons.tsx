@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 export default function Pokemons(): JSX.Element{
 
     const[list, setList] = useState([])
-    const[who, setWho] = useState(29)
+    const[who, setWho] = useState(0)
 
     useEffect(() => {
         async function RequestPokemons(){
@@ -18,7 +18,7 @@ export default function Pokemons(): JSX.Element{
                 const observer = document.querySelector("#observer");
                 observer.parentNode?.removeChild(observer);
             }
-            if(newPokemons != null){
+            else if(newPokemons != null){
                 setList((prevPokemons) => [...prevPokemons, ...newPokemons]);
             }
             else{
@@ -30,17 +30,18 @@ export default function Pokemons(): JSX.Element{
 
     useEffect(() => {
         const observer: Element | null = document.querySelector("#observer")
-    
-        const intersectionObserver = new IntersectionObserver((entries) => {
-            if(entries.some((entry) => entry.isIntersecting)){
-                setWho((whoPageInsideState) => whoPageInsideState + 1);
-                console.log(who)
-            }
-        });
 
-        intersectionObserver.observe(observer);
+        if(observer != null){
+            const intersectionObserver = new IntersectionObserver((entries) => {
+                if(entries.some((entry) => entry.isIntersecting)){
+                    setWho((whoPageInsideState) => whoPageInsideState + 1);
+                }
+            });
 
-        return () => intersectionObserver.disconnect();
+            intersectionObserver.observe(observer);
+
+            return () => intersectionObserver.disconnect();
+        }
     }, [])
 
     return(
