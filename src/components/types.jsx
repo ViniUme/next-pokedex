@@ -1,6 +1,6 @@
 import styles from '../styles/types.module.scss';
 
-export default function Types({types}: any): JSX.Element{
+export default function Types({types}){
 
     if(types.length === 1){
 

@@ -4,7 +4,7 @@ import Card from './card';
 import styles from '../styles/pokemons.module.scss';
 import { useState, useEffect } from 'react';
 
-export default function Pokemons(): JSX.Element{
+export default function Pokemons(){
 
     const[list, setList] = useState([])
     const[who, setWho] = useState(0)
@@ -14,12 +14,12 @@ export default function Pokemons(): JSX.Element{
 
             const newPokemons = await Requests.GetManyPokemons(who)
 
-            if(newPokemons === false){
+            if(newPokemons != null && newPokemons != false){
+                setList((prevPokemons) => [...prevPokemons, ...newPokemons]);
+            }
+            else if(newPokemons === false){
                 const observer = document.querySelector("#observer");
                 observer.parentNode?.removeChild(observer);
-            }
-            else if(newPokemons != null){
-                setList((prevPokemons) => [...prevPokemons, ...newPokemons]);
             }
             else{
                 setWho(who + 1)
@@ -29,7 +29,7 @@ export default function Pokemons(): JSX.Element{
     }, [who])
 
     useEffect(() => {
-        const observer: Element | null = document.querySelector("#observer")
+        const observer = document.querySelector("#observer")
 
         if(observer != null){
             const intersectionObserver = new IntersectionObserver((entries) => {
@@ -46,7 +46,7 @@ export default function Pokemons(): JSX.Element{
 
     return(
         <div className={styles.pokemons_div}>
-            {list && list.map((pokemon: any, key: any) => {
+            {list && list.map((pokemon, key) => {
                 return(
                     <Card pokemon={pokemon} key={key} />
                 )

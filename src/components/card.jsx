@@ -2,7 +2,7 @@ import styles from '../styles/card.module.scss';
 import Image from 'next/image';
 import Types from './types'
 
-export default function Card({pokemon}: any): JSX.Element{
+export default function Card({pokemon}){
 
     return(
         <div className={`${styles.card} background_${pokemon.types[0].type.name}`}>

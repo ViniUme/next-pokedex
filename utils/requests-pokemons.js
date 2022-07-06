@@ -1,13 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-    GetManyPokemons: async (number_who: number) => {
+    GetManyPokemons: async (number_who) => {
 
         if(number_who > 31){
             return false
         }
         if(number_who != 0){
-            const list: any = []
-            var max: number = number_who * 30;
+            const list = []
+            var max = number_who * 30;
             if( (number_who * 30) > 905 ){
                 max = 906
                 var min = 900
@@ -19,7 +19,7 @@ export default {
             console.log(min, max)
 
             while(min < max){
-                const respose: Response = await fetch(`https://pokeapi.co/api/v2/pokemon/${min}`);
+                const respose = await fetch(`https://pokeapi.co/api/v2/pokemon/${min}`);
                 let json = await respose.json();
 
                 if(json.sprites.other["official-artwork"].front_default === null){
