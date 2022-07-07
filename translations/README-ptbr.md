@@ -11,21 +11,21 @@
 
 <br>
 
-## Translations
-- [Português Brasileiro](https://github.com/ViniUme/next-pokedex/blob/master/translations/README-ptbr.md)
+## Traduções
+- [English](https://github.com/ViniUme/next-pokedex/)
 
 <br>
 
-### About
-This site is based in other repository mine, the <a href="https://github.com/ViniUme/Flask-Pokedex">Flask Pokedex</a>. In both I use the API <a href="https://pokeapi.co/">PokeAPI</a> to get information of pokemons. In this I use Next.js to make front and back end. I intend to make a page of each pokemon, having informatio of attack, status, evolution, and more . . .
+### Sobre
+Esse site é baseado em outro repositório meu,<a href="https://github.com/ViniUme/Flask-Pokedex">Flask Pokedex</a>. Em ambos eu usei a API<a href="https://pokeapi.co/">PokeAPI</a> para pegar as informações dos pokemons. Nesse eu usei Next.js para fazer o Frontend e o Backend. Eu pretendo fazer uma página exclusiva de cada pokemon, tendo informações sobre ataques, status, evoluções, e muito mais . . .
 
 <br>
 
-### Technologies Used
+### Tecnologias Usadas
 <table>
   <tr>
-    <td>Front End</td>
-    <td>Back End</td>
+    <td>Frontend</td>
+    <td>Backend</td>
   </tr>
   
   <tr>
@@ -41,19 +41,19 @@ This site is based in other repository mine, the <a href="https://github.com/Vin
 
 <br>
 
-### How to Run
-Clone this repository:
+### Como executar o código
+Clone esse repositório:
 
-    git clone https://github.com/ViniUme/Movies-Website.git
+    git clone https://github.com/ViniUme/next-pokedex.git
     
-Have Node.js installed. With terminal opened in project folder, install the dependencies :
+Tenha o Node.JS instalado no seu computador. Com o terminal aberto na pasta do projeto, instale as dependências:
 
     npm install
-        or
+        ou
     yarn
     
-Then type this command in to run local server:
+Então digite este comando para iniciar o servido local:
 
     npm run dev
-       or
+        ou
     yarn dev
