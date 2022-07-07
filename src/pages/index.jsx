@@ -7,6 +7,7 @@ export default function Index(){
         <div> 
             <Head>
                 <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+                <title>My Next Pokedex</title>
             </Head>
             <Navbar/>
             <Pokemons/>
