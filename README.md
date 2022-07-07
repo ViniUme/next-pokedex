@@ -2,17 +2,22 @@
   
 # <a href="https://next-pokedex-one.vercel.app/">Next Pokedex</a>
   
-  <img alt="GitHub" src="https://img.shields.io/github/license/ViniUme/Movies-Website?color=%23002455&style=for-the-badge"><br>
-  <img width="80%" src="https://github.com/ViniUme/assets/blob/master/movies.gif">
+  <img alt="GitHub" src="https://img.shields.io/github/license/ViniUme/next-pokedex?color=%23ffffff&style=for-the-badge">
+
+  <br>
+
+  <img width="80%" src="https://github.com/ViniUme/assets/blob/master/pokedex.gif?raw=true">
 </div>
 
+<br>
+
 ## Translations
-- [Português Brasileiro](https://github.com/ViniUme/Movies-Website/blob/master/translations/README-ptbr.md)
+- [Português Brasileiro](https://github.com/ViniUme/next-pokedex/blob/master/translations/README-ptbr.md)
 
 <br>
 
 ### About
-This site was make with Next.JS, inpired on Netflix and get data in <a href="https://www.themoviedb.org/?language=pt-BR">The Movie Data Base</a>. You can access the site <a href="https://movies-website-eight.vercel.app/">here</a>
+This site is based in other repository mine, the <a href="https://github.com/ViniUme/Flask-Pokedex">Flask Pokedex</a>. In both I use the API <a href="https://pokeapi.co/">PokeAPI</a> to get information of pokemons. In this I use Next.js to make front and back end. I intend to make a page of each pokemon, having informatio of attack, status, evolution, and more . . .
 
 <br>
 
@@ -29,9 +34,6 @@ This site was make with Next.JS, inpired on Netflix and get data in <a href="htt
   </tr>
     <td><img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"></td>
     <td><img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"></td>
-  <tr>
-    <td><img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"></td>
-  </tr>
   <tr>
     <td><img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"></td>
   </tr>
@@ -55,5 +57,3 @@ Then type this command in to run local server:
     npm run dev
        or
     yarn dev
-    
-Open in your navigator the localhost in port 3000: <a href="http://localhost:3000"> http://localhost:3000</a>
