@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Types from '../../components/types';
 import Requests from '../../utils/requests-pokemons';
 import { useEffect, useState } from 'react';
 import styles from '../../styles/id.module.scss';
@@ -28,7 +29,15 @@ export default function IdPokemon(){
                     </div>
 
                     <div className={styles.main_info}>
-                        <span>Nº{pokemon.id}<h1 className={styles.name}>{pokemon.species.name}</h1></span>
+
+                        <span>
+                            <h1 className={styles.name}>{pokemon.species.name}</h1>
+                            <h2 className={styles.id}>Nº{pokemon.id}</h2>
+                        </span>
+
+                        <span className={styles.types}>
+                            <Types types={pokemon.types} />
+                        </span>
                     </div>
                 </section>
             </div>
