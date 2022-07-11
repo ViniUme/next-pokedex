@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import Requests from '../../utils/requests-pokemons';
+import Requests from '../utils/requests-pokemons';
 import Card from './card';
 import styles from '../styles/pokemons.module.scss';
 import { useState, useEffect } from 'react';
