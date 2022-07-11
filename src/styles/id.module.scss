@@ -1,0 +1,38 @@
+.container{
+    width: 100vw;
+    background: #000000;
+    color: #ffffff;
+
+    .section{
+        width: 85vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: #1a1a1a;
+
+        .background_img{
+            background: #ffffff;
+            border-radius: 100%;
+        }
+
+        .main_info{
+            flex-direction: column;
+            font: 25px 'Inter', 'Poppins', sans-serif;
+
+            .name{
+                text-transform: uppercase;
+                display: inline;
+            }
+        }
+    }
+}
+
+.container, .background_img, .main_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background_img, .pokemon_img{
+    width: calc((40vw + 40vh) / 2);
+    height: calc((40vw + 40vh) / 2);
+}
