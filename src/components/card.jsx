@@ -11,7 +11,6 @@ export default function Card({pokemon}){
                 <div className={styles.image_div}>
                     <Image src={`${pokemon.sprites.other["official-artwork"].front_default}`} width={135} height={135} alt="" />
                 </div>
-                <span className={styles.id}>Nº{pokemon.id}</span>
                 <span className={styles.name}>{pokemon.species.name}</span>
                 
                 <div className={styles.types}>
