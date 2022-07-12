@@ -17,7 +17,7 @@
 <br>
 
 ### About
-This site is based on another repository of mine, the <a href="https://github.com/ViniUme/Flask-Pokedex">Flask Pokedex</a>. In both I use the <a href="https://pokeapi.co/">PokeAPI</a> API to get information about pokemons. In this one I use Next.js to do frontend and backend. I intend to make a page of each pokemon, having attack informatio, status, evolution, and much more . . .
+This site is based on another repository of mine, the <a href="https://github.com/ViniUme/Flask-Pokedex">Flask Pokedex</a>. In both I use the <a href="https://pokeapi.co/">PokeAPI</a> API to get information about pokemons. In this one I use Next.js to do frontend and backend.
 
 <br>
 
