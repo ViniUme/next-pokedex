@@ -1,25 +1,28 @@
 .container{
     width: 100vw;
-    background: #000000;
+    margin-top: 100px;
     color: #ffffff;
 
     .section{
+        margin: 100px 0;
         width: 85vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         background: #1a1a1a;
+        border-radius: 150px;
 
         .background_img{
             background: #ffffff;
             border-radius: 100%;
             justify-self: center;
+            margin: 50px;
             width: calc((35vw + 35vh) / 2);
             height: calc((35vw + 35vh) / 2);
 
             .pokemon_img{
-                width: calc((30vw + 30vh) / 2);
-                height: calc((30vw + 30vh) / 2);
+                width: calc((25vw + 25vh) / 2);
+                height: calc((25vw + 25vh) / 2);
             }
         }
 
